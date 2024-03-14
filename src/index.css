@@ -1,0 +1,62 @@
+
+
+
+.jumbotron {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+}
+
+.jumbotron p {
+  color: #6c757d;
+}
+
+
+.card-custom {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover {
+  text-decoration: none;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #666;
+}
+
+
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }

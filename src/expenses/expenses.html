@@ -1,0 +1,132 @@
+<!-- https://www.youtube.com/watch?v=vuLTzi17k14&ab_channel=KeithPaterson -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- jquery UI -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  
+  <!-- our custom style -->
+  <link href="./css/expenses.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="../navbar.css">
+  <link rel="stylesheet" href="./css/expenses.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light" id="TheNavBar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">FinApp</a> <!-- Take to home page-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../dashboard/dashboard.html" id="dashboardpage">Dashboard</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../bills/bills.html" id="billspage">Bills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../goals/goals.html" id="goalspage">Goals</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../expenses/expenses.html" id="expensespage">Expenses</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../networth/networth.html" id="networthpage">NetWorth</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../info/info.html" id="infopage">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../settings/settings.html">Settings</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="LoginLogOut">Login</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-0 left">
+        <!-- TODO funny ads-->
+      </div>
+      <div class="col-md-12 middle">
+        <div class="d-flex justify-content-center">
+
+          <!-- https://jqueryui.com/datepicker/#dropdown-month-year -->
+          <!-- TODO instead of jquery UI date picker, use bootstrap's date picker-->
+          <div class="row">
+            <p>Date: <input type="text" id="datepicker"></p>
+          </div>
+          <!--https://getbootstrap.com/docs/5.0/components/accordion/-->
+
+          <!-- 
+            TODO place checkbox in each check box so we could delete multiple items at once
+            https://codepen.io/aavlice/pen/ExZOLMy
+          -->
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="accordion" id="accordionExample">
+                  <!-- This is where dynamically allocated accordion items go -->
+              </div>
+            </div>
+          </div>
+
+          <!-- https://getbootstrap.com/docs/5.3/components/buttons/ -->
+          <div class=" d-grid gap-3 d-md-flex justify-content-md-center" role="group" id="buttons">
+            <button type="button" class="btn btn-primary " id="addbutton">Add</button>
+            <button type="button" class="btn btn-danger " id="removebutton">Remove</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-0 right">
+        <!-- TODO funny ads-->
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <!-- Firebase -->
+  <script src="./js/expenses.mjs" type="module"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- jquery ui -->
+  <!-- mine -->
+  <script src="./js/expenses.js" ></script>
+    
+
+</body>
+
+</html>

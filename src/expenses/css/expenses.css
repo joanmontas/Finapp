@@ -1,0 +1,8 @@
+.middle{
+    min-height: 90vh;
+}
+
+.btn-group {
+    position: fixed;
+    bottom: 10px;
+}
