@@ -10,7 +10,7 @@ import { getDatabase, set, get, update, remove, ref, child} from "https://www.gs
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAAcuHnPgtP6CqShJT7lncoYOM_qii2tW4",
+    apiKey: "NAN",
     authDomain: "financialappgui2.firebaseapp.com",
     projectId: "financialappgui2",
     storageBucket: "financialappgui2.appspot.com",
