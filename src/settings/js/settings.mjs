@@ -15,7 +15,7 @@ const firebaseConfig = {
     projectId: "financialappgui2",
     storageBucket: "financialappgui2.appspot.com",
     messagingSenderId: "628533819433",
-    appId: "1:628533819433:web:1746a184a788dbe2344438",
+    appId: "NAN",
     measurementId: "G-RB5GYRE5J3"
 };
 
